@@ -8,7 +8,7 @@ import java.util.List;
 
 public class JavaTest {
 
-    private List<String> texts = new ArrayList<>();
+    private final List<String> texts = new ArrayList<>();
 
     @BeforeEach
     void init() {
