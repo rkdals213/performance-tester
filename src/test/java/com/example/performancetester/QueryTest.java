@@ -29,16 +29,16 @@ class QueryTest {
     @Autowired
     QuerydslRepository querydslRepository;
 
-    @BeforeEach
-    void init() {
-        List<TestEntity> datas = new ArrayList<>();
-
-        for (int i = 0; i < 10_000; i++) {
-            datas.add(new TestEntity("data1", "data2", "data3", "data4", "data5"));
-        }
-
-        testRepository.saveAllAndFlush(datas);
-    }
+//    @BeforeEach
+//    void init() {
+//        List<TestEntity> datas = new ArrayList<>();
+//
+//        for (int i = 0; i < 10_000; i++) {
+//            datas.add(new TestEntity("data1", "data2", "data3", "data4", "data5"));
+//        }
+//
+//        testRepository.saveAllAndFlush(datas);
+//    }
 
     @Test
     void jdbc_mybatis_jpa_querydsl_querydslDto() {
